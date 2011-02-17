@@ -2,132 +2,165 @@ name: The Great Typekit Table
 windows_rating_classes : [ 'windows-bad', 'windows-okay', 'windows-great' ]
 windows_ratings : [ 'Bad', 'Okay', 'Great' ]
 fontdata:
+  
+  # ' styles : ' + $('.font-variations dt').length + ' library : ' + $('.upgrade-notice strong').text() + ' foundry: - name : ' + $('.font-byline a').text() + ' slug : ' + $('.font-byline a').attr('href')
+  
   - name : Adelle Web
     slug : adelle-web
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
+    styles : 12
     windows_rating : 2
+    library : trial
+    foundry : 
+      - name : TypeTogether
+        slug : typetogether
 
   - name : Adobe Garamond Pro
     slug : adobe-garamond-pro
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
+    styles: 6
+    libraries : trial
+    foundry : 
+      - name : Adobe
+        slug : adobe
 
   - name : Adobe Text Pro
     slug : adobe-text-pro
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
+    styles: 6
+    library : portfolio
+    foundry : 
+      - name : Adobe
+        slug : adobe
 
   - name : Adriane
     slug : adriane
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 0
+    styles : 4
+    library : personal
+    foundry : 
+      - name : Typefolio
+        slug : typefolio
 
   - name : Adrianna
     slug : adrianna
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
+    family : 
+      - name : Adrianna Extended
+        slug : adrianna-extended
+      - name : Adrianna Extended Demibold
+        slug : adrianna-extended-demibold
     windows_rating : 2
+    styles: 10
+    library : portfolio
+    foundry : 
+      - name : Chank Co
+        slug : chank-co
 
   - name : Angie STD Sans
     slug : angie-std-sans
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
+    library : trial
+    foundry : 
+      - name : Porchez Typofonderie
+        slug : porchez-typofonderie
 
   - name : Apertura
     slug : apertura
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
+    styles: 8
+    library : portfolio
+    foundry : 
+      - name : Betatype
+        slug : betatype
 
-  - name : Apolline
+  - name : Apolline STD
     slug : apolline-std
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 0
+    library : trial
+    foundry : 
+      - name : Porchez Typofonderie
+        slug : porchez-typofonderie
 
   - name : Athelas Web
     slug : athelas-web
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
+    library : personal
+    foundry : 
+      - name : TypeTogether
+        slug : typetogether
 
   - name : Atrament Web
     slug : atrament-web
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
+    styles : 8
+    library : Personal plan
+    foundry: 
+      - name : Suitcase Type Foundry
+        slug : /foundries/suitcase-type-foundry
 
   - name : Botanika
     slug : botanika-web
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 0
+    library : Portfolio plan
+    foundry: 
+      - name : Suitcase Type Foundry
+        slug : /foundries/suitcase-type-foundry
 
   - name : Bree Web
     slug : bree-web
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
+    styles : 10 
+    library : Personal plan
+    foundry: 
+      - name : TypeTogether
+        slug : /foundries/typetogether
 
   - name : Brevia
     slug : brevia
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
+    styles : 12
+    library : Personal plan
+    foundry:
+      - name : HVD Fonts
+        slug : /foundries/hvd-fonts
 
   - name : Calluna
     slug : calluna
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Cantarell
     slug : cantarell
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Cardigan
     slug : cardigan
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Chaparral Pro
@@ -135,55 +168,41 @@ fontdata:
     serif : true
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 1
 
   - name : Chennai
     slug : chennai
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Colaborate
     slug : colaborate
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Comenia Sans Web
     slug : comenia-sans-web
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Coolvetica
     slug : coolvetica
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Cora Web
     slug : cora-web
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Costa STD
     slug : costa-std
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Cronos
@@ -191,30 +210,22 @@ fontdata:
     serif : false
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 2
 
   - name : DDT
     slug : ddt
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Dederon Sans
     slug : dederon-sans-web
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Dederon Serif Web
     slug : dederon-serif-web
     serif : true
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 1
 
@@ -222,32 +233,24 @@ fontdata:
     slug : default-gothic
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Deva Ideal
     slug : deva-ideal
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Dienstag
     slug : dienstag
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Divulge
     slug : divulge
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Droid Serif
@@ -255,101 +258,71 @@ fontdata:
     serif : true
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 0
 
   - name : Dustismo
     slug : dustismo
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Edita Web
     slug : edita-web
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Expressway
     slug : expressway
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FacitWeb
     slug : facitweb
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Fenwick
     slug : fenwick
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FF Cocon Web Pro
     slug : ff-cocon-web-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FF Dagny Web Pro
     slug : ff-dagny-web-pro
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : FF Dax Web Pro
     slug : ff-dax-web-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FF Enzo Web
     slug : ff-enzo-web
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FF Masala Web Pro
     slug : ff-masala-web-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : FF Meta Serif Web Pro
     slug : ff-meta-serif-web-pro
     serif : true
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
   - name : FF Meta Web Pro
     slug : ff-meta-web-pro
     serif : false
-    extra_weights : false
     extra_opticals : true
     superfamily : true
     windows_rating : 2
@@ -359,102 +332,76 @@ fontdata:
     serif : false
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 2
 
   - name : FF Tisa Web Pro
     slug : ff-tisa-web-pro
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Galette
     slug : galette
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Garamond Premier Pro Display
     slug : garamond-premier-pro-display
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Gesta
     slug : gesta
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Gloriola Web
     slug : gloriola-web
     serif : false
-    extra_weights : false
     extra_opticals : true
-    superfamily : false
     windows_rating : 2
 
   - name : Gnuolane
     slug : gnuolane
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Harfang Pro
     slug : harfang-pro
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Hypatia Sans Pro
     slug : hypatia-sans-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Jesaya
     slug : jesaya
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Kandal
     slug : kandal
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Katarine Web
     slug : katarine-web
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Kulturista
     slug : kulturista-web
     serif : true
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -463,14 +410,12 @@ fontdata:
     serif : true
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 1
 
   - name : Le Havre
     slug : le-havre
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 1
 
@@ -478,7 +423,6 @@ fontdata:
     slug : le-monde-courrier-std
     serif : true
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -486,7 +430,6 @@ fontdata:
     slug : le-monde-journal-std
     serif : true
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 1
 
@@ -494,95 +437,68 @@ fontdata:
     slug : le-monde-sans-std
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
   - name : Liberation Sans
     slug : liberation-sans
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Liberation Serif
     slug : liberation-serif
     serif : true
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
   - name : Luxi Sans
     slug : luxi-sans
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Luxi Serif
     slug : luxi-serif
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Madawaska
     slug : madawaska
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Mentone
     slug : mentone
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Metallophile Sp8
     slug : metallophile-sp8
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Milibus
     slug : milibus
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Minerva Modern
     slug : minerva-modern
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Mingler
     slug : mingler
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Minion Pro
     slug : minion-pro
     serif : true
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 0
 
@@ -590,15 +506,12 @@ fontdata:
     slug : montag
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Museo Sans
     slug : museo-sans
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -606,7 +519,6 @@ fontdata:
     slug : museo-slab
     serif : true
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -614,7 +526,6 @@ fontdata:
     slug : myriad-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -622,40 +533,28 @@ fontdata:
     slug : new-cicle
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : News Gothic Std
     slug : news-gothic-std
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Nobile
     slug : nobile
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Nudista Web
     slug : nudista-web
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
   - name : Obliqua
     slug : obliqua
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : P22 FLLW Eaglefeather
@@ -663,14 +562,11 @@ fontdata:
     serif : false
     extra_weights : true
     extra_opticals : true
-    superfamily : false
     windows_rating : 1
 
   - name : Parisine Plus STD
     slug : parisine-plus-std
     serif : false
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -678,7 +574,6 @@ fontdata:
     slug : pill-gothic-300mg
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -686,7 +581,6 @@ fontdata:
     slug : proxima-nova
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -694,23 +588,17 @@ fontdata:
     slug : purista-web
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Ratio
     slug : ratio
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : RePublic Web
     slug : republic-web
     serif : true
-    extra_weights : false
-    extra_opticals : false
     superfamily : true
     windows_rating : 1
 
@@ -718,7 +606,6 @@ fontdata:
     slug : ronnia-web
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 2
 
@@ -726,15 +613,12 @@ fontdata:
     slug : skolar-web
     serif : true
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Sommet
     slug : sommet
     serif : false
     extra_weights : true
-    extra_opticals : false
     superfamily : true
     windows_rating : 0
 
@@ -742,74 +626,55 @@ fontdata:
     slug : sovba
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Sui Generis
     slug : sui-generis
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Tandelle
     slug : tandelle
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Teimer
     slug : teimer-web
     serif : true
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 0
 
   - name : Terfens
     slug : terfens
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Tussilago
     slug : tussilago
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 1
 
   - name : Urbana
     slug : urbana
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Vera Sans
     slug : vera-sans
     serif : false
-    extra_weights : false
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
   - name : Vidange Pro
     slug : vidange-pro
     serif : false
     extra_weights : true
-    extra_opticals : false
-    superfamily : false
     windows_rating : 2
 
+
+  # ' styles : ' + $('.font-variations dt').length + ' foundry: - name : ' + $('.font-byline a').text() + ' slug :' + $('.font-byline a').attr('href')
 
   # - name : FONTNAME
   #   slug : FONTSLUG
