@@ -1,0 +1,41 @@
+---
+layout: nil
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ site.name }}</title>
+
+
+
+</head>
+<body>
+
+  <h1>{{ site.name }}</h1>
+  
+  <ul id="list">
+    {% for font in site.fontdata %}
+      {% if font.serif %}
+        {% assign serif_output = 'Serif' %}
+        {% assign serif_class = 'serif' %}
+      {% else %}
+        {% assign serif_output = 'Sans-serif' %}
+        {% assign serif_class = 'sans-serif' %}
+      {% endif %}
+      {% capture item_class %} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {{ site.windows_rating_classes[font.windows_rating] }} {% endcapture %}
+      <li class="{{ item_class }}" data-windows-rating="{{ font.windows_rating }}">
+        <h2 class="ir"><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></h2>
+        <ul class="font-data">
+          <li class="serifs">{{ serif_output }}</li>
+          {% if font.extra_weights %}<li class="extra-weights">Extra weights</li>{% endif %}
+          {% if font.extra_opticals %}<li class="extra-opticals">Extra opticals</li>{% endif %}
+          {% if font.superfamily %}<li class="superfamily">Superfamily</li>{% endif %}
+          <li class="on-windows">On Windows: <b>{{ site.windows_ratings[font.windows_rating] }}</b></li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>

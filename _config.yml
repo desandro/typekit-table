@@ -1,0 +1,40 @@
+name: The Great Typekit Table
+
+windows_rating_classes : [ 'windows-bad', 'windows-okay', 'windows-great' ]
+windows_ratings : [ 'Bad', 'Okay', 'Great' ]
+
+fontdata:
+
+  - name : Adelle Web
+    slug : adelle-web
+    serif : true
+    extra_weights : true
+    superfamily : false
+    extra_opticals : false
+    windows_rating : 2
+
+  - name : Gloriola Web
+    slug : gloriola-web
+    serif : false
+    extra_weights : false
+    superfamily : false
+    extra_opticals : true
+    windows_rating : 2
+
+  - name : Proxima Nova
+    slug : proxima-nova
+    serif : false
+    extra_weights : true
+    superfamily : true
+    extra_opticals : false
+    windows_rating : 2
+
+
+  # - name : FONTNAME
+  #   slug : FONTSLUG
+  #   serif : false
+  #   extra_weights : false
+  #   superfamily : false
+  #   extra_opticals : false
+  #   windows_rating : 0
+
