@@ -8,16 +8,16 @@ fontdata:
   # (function() {
   #   var output = '';
   #   output += 'styles : ' + $('.font-variations dt').length
-  #     + ' library : ' + $('.upgrade-notice strong').text()
-  #     + ' foundry : { name: ' + $('.font-byline a').text()
-  #     + ', slug: ' + $('.font-byline a').attr('href') + ' }'
-  #     + ' tags: [ ';
+  #     + '!!library : ' + $('.upgrade-notice strong').text()
+  #     + '!!foundry : { name: ' + $('.font-byline a').text()
+  #     + ', slug: ' + $('.font-byline a').attr('href').replace( '/foundries/', '') + ' }'
+  #     + '!!tags: [ ';
   #   $('.tag-list').eq(2).find('li').each(function(){
   #     output += $(this).text() + ', '
   #   });
   #   output += ']';
   #   return output;
-  # })()
+  # })();
   
   - name : Adelle Web
     slug : adelle-web
@@ -109,14 +109,14 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Personal plan
+    library : personal
     foundry: { name : Suitcase Type Foundry, slug : suitcase-type-foundry }
 
   - name : Botanika
     slug : botanika-web
     serif : false
     windows_rating : 0
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : Suitcase Type Foundry, slug : suitcase-type-foundry }
 
   - name : Bree Web
@@ -125,7 +125,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 10 
-    library : Personal plan
+    library : personal
     foundry : { name : TypeTogether, slug : typetogether }
 
   - name : Brevia
@@ -134,7 +134,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 12
-    library : Personal plan
+    library : personal
     foundry: { name : HVD Fonts, slug : hvd-fonts }
 
   - name : Calluna
@@ -143,7 +143,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 8
-    library : Trial plan
+    library : trial
     foundry: { name : exljbris Font Foundry, slug : exljbris-font-foundry }
 
   - name : Cantarell
@@ -151,7 +151,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry: { name : Abattis, slug : abattis }
 
   - name : Cardigan
@@ -160,7 +160,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 6
-    library : Personal plan
+    library : personal
     foundry: { name : Typodermic, slug : typodermic }
 
   - name : Chaparral Pro
@@ -170,7 +170,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 1
     styles : 8
-    library : Personal plan
+    library : personal
     foundry: { name : Adobe, slug : adobe }
 
   - name : Chennai
@@ -179,7 +179,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 12
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : Insigne Design, slug : insigne-design }
 
   - name : Colaborate
@@ -188,7 +188,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 5
-    library : Trial plan
+    library : trial
     foundry: { name : Carrois Type Design, slug : carrois-type-design }
 
   - name : Comenia Sans Web
@@ -196,7 +196,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : Suitcase Type Foundry, slug : suitcase-type-foundry }
 
   - name : Coolvetica
@@ -205,7 +205,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 14
-    library : Personal plan
+    library : personal
     foundry: { name : Larabie Fonts, slug : larabie-fonts }
 
   - name : Cora Web
@@ -214,7 +214,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry: { name : TypeTogether, slug : typetogether }
 
   - name : Costa STD
@@ -223,7 +223,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 5
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : Porchez Typofonderie, slug : porchez-typofonderie }
 
   - name : Cronos
@@ -233,7 +233,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 2
     styles : 8
-    library : Personal plan
+    library : personal
     foundry: { name : Adobe, slug : adobe }
 
   - name : DDT
@@ -242,7 +242,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 12 
-    library : Personal plan 
+    library : personal 
     foundry: { name : Typodermic, slug : typodermic }
 
   - name : Dederon Sans Web
@@ -250,7 +250,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry: { name : Suitcase Type Foundry, slug : suitcase-type-foundry }
 
   - name : Dederon Serif Web
@@ -259,7 +259,7 @@ fontdata:
     superfamily : true
     windows_rating : 1
     styles : 4
-    library : Personal plan
+    library : personal
     foundry: { name : Suitcase Type Foundry, slug : suitcase-type-foundry }
 
   - name : Default Gothic
@@ -268,7 +268,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : PSY/OPS, slug : psyops }
 
   - name : Deva Ideal
@@ -277,7 +277,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 10
-    library : Personal plan
+    library : personal
     foundry: { name : DizajnDesign, slug : dizajndesign }
 
   - name : Dienstag
@@ -286,7 +286,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6 
-    library : Portfolio plan
+    library : portfolio
     foundry: { name : Insigne Design, slug : insigne-design }
 
   - name : Divulge
@@ -295,7 +295,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry: { name : Typodermic, slug : typodermic }
     tags: [ clean, clear ]
 
@@ -306,7 +306,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 0
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Google Android, slug: google-android }
     tags: [ clear, paragraph, open source ]
 
@@ -315,7 +315,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Cheapskate Fonts, slug: cheapskate-fonts }
     tags: [ clean, clear ]
 
@@ -324,7 +324,7 @@ fontdata:
     serif : true
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: TypeTogether, slug: typetogether }
     tags: [ clear, humanist, contemporary ]
 
@@ -333,7 +333,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 14
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clear ]
 
@@ -342,7 +342,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 12
-    library : Personal plan
+    library : personal
     foundry : { name: Just Another Foundry, slug: just-another-foundry }
     tags: [ clean, clear, contemporary, paragraph ]
 
@@ -351,7 +351,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clear, decorative, retro, poster ]
 
@@ -361,7 +361,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: FontFont, slug: fontfont }
     tags: [ casual, clear, techno, rounded, headline ]
 
@@ -370,7 +370,7 @@ fontdata:
     serif : false
     windows_rating : 1
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: FontFont, slug: fontfont }
     tags: [ clean, clear, text, paragraph ]
 
@@ -380,7 +380,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: FontFont, slug: fontfont }
     tags: [ clear, text, paragraph ]
 
@@ -390,7 +390,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: FontFont, slug: fontfont }
     tags: [ clear, retro, poster, paragraph ]
 
@@ -400,7 +400,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: FontFont, slug: fontfont }
     tags: [ clean, clear, display, paragraph ]
 
@@ -411,7 +411,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: FontFont, slug: fontfont } 
     tags: [ clean, clear, display, paragraph ]
 
@@ -422,7 +422,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 2
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: FontFont, slug: fontfont }
     tags: [ rounded, business, text, paragraph ]
 
@@ -431,7 +431,7 @@ fontdata:
     serif : true
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: FontFont, slug: fontfont }
     tags: [ slab, wood type, display, text, paragraph ]
 
@@ -441,7 +441,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Paragraph, slug: paragraph }
     tags: [ clean, block ]
 
@@ -451,7 +451,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 10
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, headline, elegant, oldstyle ]
 
@@ -461,7 +461,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Trial plan
+    library : trial
     foundry : { name: Rui Abreu, slug: rui-areba }
     tags: [ clean, clear, business, text ]
 
@@ -471,7 +471,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clean, clear, text ]
 
@@ -481,7 +481,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 5
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ block ]
 
@@ -491,7 +491,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 12
-    library : Personal plan
+    library : personal
     foundry : { name: PSY/OPS, slug: psyops }
     tags: [ clean, humanist, chiseled ]
 
@@ -501,7 +501,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 12
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Adobe, slug: adobe }
     tags: [ clean, geometric, humanist ]
 
@@ -511,7 +511,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 7
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clean ]
 
@@ -521,7 +521,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: Mark Simonson Studio, slug: mark-simonson-studio }
     tags: [ clear, school ]
 
@@ -530,7 +530,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clean, clear, business, text ]
 
@@ -541,7 +541,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 10
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clean, clear, slab, display ]
 
@@ -552,7 +552,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 1
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Just Another Foundry, slug: just-another-foundry }
     tags: [ clear, text, rough ]
 
@@ -563,7 +563,7 @@ fontdata:
     superfamily : true
     windows_rating : 1
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ geometric ]
 
@@ -574,7 +574,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ clean, text ]
 
@@ -585,7 +585,7 @@ fontdata:
     superfamily : true
     windows_rating : 1
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ clean, clear, text, newspaper ]
 
@@ -596,7 +596,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ clean, clear, text, paragraph ]
 
@@ -605,7 +605,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Red Hat, slug: redhat }
     tags: [ clean, business ]
 
@@ -615,7 +615,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Red Hat, slug: redhat }
     tags: [ clean, business ]
 
@@ -624,7 +624,7 @@ fontdata:
     serif : false
     windows_rating : 1
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Bigelow & Holmes, slug: bigelow-holmes }
     tags: [ clear ]
 
@@ -633,7 +633,7 @@ fontdata:
     serif : true
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Bigelow & Holmes, slug: bigelow-holmes }
     tags: [ clear ]
 
@@ -643,7 +643,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 14
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clear, slab, poster ]
 
@@ -653,7 +653,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Paragraph, slug: paragraph }
     tags: [ clean, clear ]
 
@@ -662,7 +662,7 @@ fontdata:
     serif : false
     windows_rating : 1
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: Mark Simonson Studio, slug: mark-simonson-studio }
     tags: [ geometric, retro ]
 
@@ -672,7 +672,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ block, futuristic ]
 
@@ -682,7 +682,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: T-26, slug: t-26 }
     tags: [ headline, humanist, elegant, cosmetics, feminine, modern ]
 
@@ -692,7 +692,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: Chank Co, slug: chank-co }
     tags: [ clear, poster, playful ]
 
@@ -702,7 +702,7 @@ fontdata:
     superfamily : true
     windows_rating : 0
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: Adobe, slug: adobe }
     tags: [ clean, clear, text, paragraph ]
 
@@ -712,7 +712,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ clean, techno, decorative, extended ]
 
@@ -723,7 +723,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: exljbris Font Foundry, slug: exljbris-font-foundry }
     tags: [ clean, geometric, contemporary, slab ]
 
@@ -734,7 +734,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: exljbris Font Foundry, slug: exljbris-font-foundry }
     tags: [ clean, geometric, contemporary, paragraph, grotesk ]
 
@@ -745,7 +745,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 12
-    library : Trial plan
+    library : trial
     foundry : { name: exljbris Font Foundry, slug: exljbris-font-foundry }
     tags: [ slab, display, magazine ]
 
@@ -756,7 +756,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 10
-    library : Personal plan
+    library : personal
     foundry : { name: Adobe, slug: adobe }
     tags: [ clean, clear, text, paragraph, humanist ]
 
@@ -766,7 +766,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: La Tipomatika, slug: la-tipomatika }
     tags: [ clean, retro, geometric ]
 
@@ -775,7 +775,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, clear, gothic, headline ]
 
@@ -784,7 +784,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Vernon Adams, slug: vernon-adams }
     tags: [ open source ]
 
@@ -795,7 +795,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 10
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clear, business, display, text ]
 
@@ -804,7 +804,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: César Puertas, slug: cesar-puertas }
     tags: [ clean, clear, humanist ]
 
@@ -815,7 +815,7 @@ fontdata:
     extra_opticals : true
     windows_rating : 1
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: P22, slug: p22 }
     tags: [ decorative, arts and crafts, architect, blueprints, hand, geometric ]
 
@@ -825,7 +825,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ casual, clean, clear ]
 
@@ -836,7 +836,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 8
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Betatype, slug: betatype }
     tags: [ clean, gothic, condensed ]
 
@@ -847,7 +847,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 14
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Mark Simonson Studio, slug: mark-simonson-studio }
     tags: [ clean, rounded, business, geometric ]
 
@@ -857,7 +857,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 10
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ geometric, techno, rounded, business ]
 
@@ -867,7 +867,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 12
-    library : Personal plan
+    library : personal
     foundry : { name: ps Type, slug: ps-type }
     tags: [ clean ]
 
@@ -877,7 +877,7 @@ fontdata:
     superfamily : true
     windows_rating : 1
     styles : 4
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ historic, text, magazine ]
 
@@ -888,7 +888,7 @@ fontdata:
     superfamily : true
     windows_rating : 2
     styles : 14
-    library : Personal plan
+    library : personal
     foundry : { name: TypeTogether, slug: typetogether }
     tags: [ clean, historic, clear ]
 
@@ -898,7 +898,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: TypeTogether, slug: typetogether }
     tags: [ clean, clear ]
 
@@ -909,7 +909,7 @@ fontdata:
     superfamily : true
     windows_rating : 0
     styles : 12
-    library : Personal plan
+    library : personal
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ clean, techno, decorative ]
 
@@ -919,7 +919,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 12
-    library : Trial plan
+    library : trial
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ handwriting, clean, clear, bold, fun, decorative, comic ]
 
@@ -929,7 +929,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 14
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ bold, futuristic, extended ]
 
@@ -938,7 +938,7 @@ fontdata:
     serif : false
     windows_rating : 1
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clean, condensed ]
 
@@ -947,7 +947,7 @@ fontdata:
     serif : true
     windows_rating : 0
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clean, historic, clear, modern ]
 
@@ -957,7 +957,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 6
-    library : Trial plan
+    library : trial
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ techno, retro, poster ]
 
@@ -967,7 +967,7 @@ fontdata:
     extra_weights : true
     windows_rating : 1
     styles : 14
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ bold, poster, extended ]
 
@@ -977,7 +977,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 10
-    library : Personal plan
+    library : personal
     foundry : { name: César Puertas, slug: cesar-puertas }
     tags: [ clean, clear, poster ]
 
@@ -986,7 +986,7 @@ fontdata:
     serif : false
     windows_rating : 2
     styles : 4
-    library : Trial plan
+    library : trial
     foundry : { name: Bitstream, slug: bitstream }
     tags: [ clean, business, paragraph ]
 
@@ -996,7 +996,7 @@ fontdata:
     extra_weights : true
     windows_rating : 2
     styles : 8
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: PSY/OPS, slug: psyops }
     tags: [ geometric, historic, futuristic, display, quirky ]
 
