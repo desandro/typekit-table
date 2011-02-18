@@ -7,7 +7,12 @@ layout: nil
   <meta charset="utf-8" />
   <title>{{ site.name }}</title>
 
-
+  <style>
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+    
+  </style>
 
 </head>
 <body>
@@ -23,15 +28,25 @@ layout: nil
         {% assign serif_output = 'Sans-serif' %}
         {% assign serif_class = 'sans-serif' %}
       {% endif %}
+
       {% capture item_class %} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {{ site.windows_rating_classes[font.windows_rating] }} {% endcapture %}
+
       <li class="{{ item_class }}" data-windows-rating="{{ font.windows_rating }}">
         <h2 class="ir"><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></h2>
         <ul class="font-data">
           <li class="serifs">{{ serif_output }}</li>
+          <li class="styles">Styles: <b>{{ font.styles }}</b></li>
+          <li class="foundry">by <a href="http://typekit.com/foundries/{{ font.foundry.slug }}">{{ font.foundry.name }}</a></li>
+          <li class="library">Library: <b>{{ font.library }}</b></li>
           {% if font.extra_weights %}<li class="extra-weights">Extra weights</li>{% endif %}
           {% if font.extra_opticals %}<li class="extra-opticals">Extra opticals</li>{% endif %}
           {% if font.superfamily %}<li class="superfamily">Superfamily</li>{% endif %}
           <li class="on-windows">On Windows: <b>{{ site.windows_ratings[font.windows_rating] }}</b></li>
+          <li class="tags">
+            <ul>
+              {% for tag in font.tags %}<li>{{ tag }}</li>{% endfor %}
+            </ul>
+          </li>
         </ul>
       </li>
     {% endfor %}
