@@ -251,30 +251,81 @@ button {  width: auto; overflow: visible; }
 .parisine-plus-std .sample 
 { background-image: url('http://i.imgur.com/fWeGo.png'); }
 
+
+.angie-std-sans .sample,
+.apertura .sample,
+.atrament-web .sample,
+.pill-gothic-600mg .sample,
+.kulturista-web .sample,
+.dederon-sans-web .sample,
+.comenia-sans-web .sample,
+.republic-web .sample,
+.botanika-web .sample,
+.teimer-web .sample,
+.dederon-serif-web .sample,
+.purista-web .sample,
+.nudista-web .sample,
+.gloriola-web .sample,
+.brevia .sample,
+.museo-slab .sample,
+.museo .sample,
+.museo-sans .sample,
+.calluna .sample,
+.calluna-sans .sample,
+.madawaska .sample,
+.cantarell .sample,
+.fenwick .sample,
+.expressway .sample
+{ background-image: url('http://i.imgur.com/LJy77.png'); }
+
+.angie-std-sans .sample,
 .adriane .sample { background-position: 0   0px; }
+.apertura .sample,
 .adelle-web .sample { background-position: 0 -40px; }
+.atrament-web .sample,
 .athelas-web .sample { background-position: 0 -80px; }
+.pill-gothic-600mg .sample,
 .ronnia-web .sample { background-position: 0 -120px; }
+.kulturista-web .sample,
 .skolar-web .sample { background-position: 0 -160px; }
+.dederon-sans-web .sample,
 .adobe-caslon-pro .sample { background-position: 0 -200px; }
+.comenia-sans-web .sample,
 .minion-pro .sample { background-position: 0 -240px; }
+.republic-web .sample,
 .chaparral-pro .sample { background-position: 0 -280px; }
+.botanika-web .sample,
 .bree-web .sample { background-position: 0 -320px; }
+.teimer-web .sample,
 .cora-web .sample { background-position: 0 -360px; }
+.dederon-serif-web .sample,
 .edita-web .sample { background-position: 0 -400px; }
+.purista-web .sample,
 .cronos-web .sample { background-position: 0 -440px; }
+.nudista-web .sample,
 .news-gothic-std .sample { background-position: 0 -480px; }
 .hypatia-sans-pro .sample { background-position: 0 -520px; }
+.gloriola-web .sample,
 .garamond-premier-pro .sample { background-position: 0 -560px; }
+.brevia .sample,
 .adobe-text-pro .sample { background-position: 0 -600px; }
+.museo-slab .sample,
 .adobe-garamond-pro .sample { background-position: 0 -640px; }
+.museo .sample,
 .adrianna .sample { background-position: 0 -680px; }
+.museo-sans .sample,
 .mingler .sample { background-position: 0 -720px; }
+.calluna .sample,
 .le-monde-journal-std .sample { background-position: 0 -760px; }
+.calluna-sans .sample,
 .le-monde-sans-std .sample { background-position: 0 -800px; }
+.cantarell .sample,
 .le-monde-courrier-std .sample { background-position: 0 -840px; }
+.madawaska .sample,
 .apolline-std .sample { background-position: 0 -880px; }
+.fenwick .sample,
 .angie-std .sample { background-position: 0 -920px; }
+.expressway .sample,
 .parisine-plus-std .sample { background-position: 0 -960px; }
 
 

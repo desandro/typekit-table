@@ -139,6 +139,15 @@ fontdata:
     library : trial
     foundry: { name : exljbris Font Foundry, slug : exljbris-font-foundry }
 
+  - name : Calluna Sans
+    slug : calluna-sans
+    serif : false
+    extra_weights : true
+    styles : 10
+    library : Trial plan
+    foundry : { name: exljbris Font Foundry, slug: exljbris-font-foundry }
+    tags: [ clean, clear, elegant ]
+
   - name : Cantarell
     slug : cantarell
     serif : false
@@ -209,15 +218,6 @@ fontdata:
     styles : 6
     library : personal
     foundry: { name : TypeTogether, slug : typetogether }
-
-  - name : Costa STD
-    slug : costa-std
-    serif : false
-    extra_weights : true
-    windows_rating : 2
-    styles : 5
-    library : portfolio
-    foundry: { name : Porchez Typofonderie, slug : porchez-typofonderie }
 
   - name : Cronos
     slug : cronos-pro
@@ -822,8 +822,8 @@ fontdata:
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ casual, clean, clear ]
 
-  - name : Pill Gothic 300mg
-    slug : pill-gothic-300mg
+  - name : Pill Gothic 600mg
+    slug : pill-gothic-600mg
     serif : false
     extra_weights : true
     superfamily : true
@@ -831,7 +831,7 @@ fontdata:
     styles : 8
     library : portfolio
     foundry : { name: Betatype, slug: betatype }
-    tags: [ clean, gothic, condensed ]
+    tags: [ clean, gothic ]
 
   - name : Proxima Nova
     slug : proxima-nova
@@ -935,7 +935,7 @@ fontdata:
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ clean, condensed ]
 
-  - name : Teimer
+  - name : Teimer Web
     slug : teimer-web
     serif : true
     windows_rating : 0
@@ -1004,6 +1004,8 @@ fontdata:
   
 # other possible fonts
 # Chauncy http://typekit.com/fonts/chauncy-pro
+# Larabiefont http://typekit.com/fonts/larabiefont
+# Silicone http://typekit.com/fonts/silicone
 
 
 
