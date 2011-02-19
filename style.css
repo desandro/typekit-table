@@ -216,8 +216,66 @@ button {  width: auto; overflow: visible; }
 
 
 
+/* Sample images */
 
+.font .sample {
+  width: 230px;
+  height: 40px;
+  display: block;
+}
 
+.adelle-web .sample,
+.adriane .sample,
+.athelas-web .sample,
+.ronnia-web .sample,
+.skolar-web .sample,
+.adobe-caslon-pro .sample,
+.minion-pro .sample,
+.chaparral-pro .sample,
+.bree-web .sample,
+.cora-web .sample,
+.edita-web .sample,
+.cronos-web .sample,
+.news-gothic-std .sample,
+.hypatia-sans-pro .sample,
+.garamond-premier-pro .sample,
+.adobe-text-pro .sample,
+.adobe-garamond-pro .sample,
+.adrianna .sample,
+.mingler .sample,
+.le-monde-journal-std .sample,
+.le-monde-sans-std .sample,
+.le-monde-courrier-std .sample,
+.apolline-std .sample,
+.angie-std .sample,
+.parisine-plus-std .sample 
+{ background-image: url('http://i.imgur.com/fWeGo.png'); }
+
+.adriane .sample { background-position: 0   0px; }
+.adelle-web .sample { background-position: 0 -40px; }
+.athelas-web .sample { background-position: 0 -80px; }
+.ronnia-web .sample { background-position: 0 -120px; }
+.skolar-web .sample { background-position: 0 -160px; }
+.adobe-caslon-pro .sample { background-position: 0 -200px; }
+.minion-pro .sample { background-position: 0 -240px; }
+.chaparral-pro .sample { background-position: 0 -280px; }
+.bree-web .sample { background-position: 0 -320px; }
+.cora-web .sample { background-position: 0 -360px; }
+.edita-web .sample { background-position: 0 -400px; }
+.cronos-web .sample { background-position: 0 -440px; }
+.news-gothic-std .sample { background-position: 0 -480px; }
+.hypatia-sans-pro .sample { background-position: 0 -520px; }
+.garamond-premier-pro .sample { background-position: 0 -560px; }
+.adobe-text-pro .sample { background-position: 0 -600px; }
+.adobe-garamond-pro .sample { background-position: 0 -640px; }
+.adrianna .sample { background-position: 0 -680px; }
+.mingler .sample { background-position: 0 -720px; }
+.le-monde-journal-std .sample { background-position: 0 -760px; }
+.le-monde-sans-std .sample { background-position: 0 -800px; }
+.le-monde-courrier-std .sample { background-position: 0 -840px; }
+.apolline-std .sample { background-position: 0 -880px; }
+.angie-std .sample { background-position: 0 -920px; }
+.parisine-plus-std .sample { background-position: 0 -960px; }
 
 
 

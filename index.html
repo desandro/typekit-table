@@ -9,13 +9,6 @@ layout: nil
 
   <link rel="stylesheet" href="style.css" type="text/css" />
 
-  <style>
-    body {
-        font-family: 'Helvetica Neue', Arial, sans-serif;
-    }
-    
-  </style>
-
 </head>
 <body>
 
@@ -31,10 +24,13 @@ layout: nil
         {% assign serif_class = 'sans-serif' %}
       {% endif %}
 
-      {% capture item_class %} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {{ site.windows_rating_classes[font.windows_rating] }} {% for tag in font.tags %} {{ tag }} {% endfor %} {% endcapture %}
+      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {{ site.windows_rating_classes[font.windows_rating] }} {% for tag in font.tags %} {{ tag }} {% endfor %} {% endcapture %}
 
       <li class="font {{ item_class }}" data-windows-rating="{{ font.windows_rating }}" data-styles="{{ font.styles }}" data-foundry="{{ font.foundry.slug }}">
-        <h2 class=""><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></h2>
+        <a href="http://typekit.com/fonts/{{ font.slug }}">
+          <figure class="sample"></figure>
+          <h2 class="">{{ font.name }}</h2>
+        </a>
         <ul class="font-data">
           <li class="styles"><b>{{ font.styles }}</b> styles</li>
           <li class="serifs">{{ serif_output }}</li>

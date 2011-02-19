@@ -17,7 +17,7 @@ fontdata:
     serif : true
     extra_weights : true
     styles : 6
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, paragraph, elegant, oldstyle ]
 
@@ -438,15 +438,15 @@ fontdata:
     foundry : { name: Paragraph, slug: paragraph }
     tags: [ clean, block ]
 
-  - name : Garamond Premier Pro Display
-    slug : garamond-premier-pro-display
+  - name : Garamond Premier Pro
+    slug : garamond-premier-pro
     serif : true
     extra_weights : true
     windows_rating : 1
-    styles : 10
+    styles : 8
     library : portfolio
     foundry : { name: Adobe, slug: adobe }
-    tags: [ historic, headline, elegant, oldstyle ]
+    tags: [ historic, elegant, oldstyle ]
 
   - name : Gesta
     slug : gesta
@@ -998,9 +998,13 @@ fontdata:
     serif : true
     extra_weights : true
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, elegant, oldstyle ]
+  
+# other possible fonts
+# Chauncy http://typekit.com/fonts/chauncy-pro
+
 
 
   # - name : FONTNAME
