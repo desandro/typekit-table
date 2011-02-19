@@ -193,15 +193,6 @@ fontdata:
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ clean, geometric, slab, rounded, decorative, futuristic, retro, text ]
     
-  - name : Colaborate
-    slug : colaborate
-    serif : false
-    extra_weights : true
-    windows_rating : 2
-    styles : 5
-    library : trial
-    foundry: { name : Carrois Type Design, slug : carrois-type-design }
-
   - name : Comenia Sans Web
     slug : comenia-sans-web
     serif : false
@@ -228,7 +219,7 @@ fontdata:
     library : personal
     foundry: { name : TypeTogether, slug : typetogether }
 
-  - name : Cronos
+  - name : Cronos Pro
     slug : cronos-pro
     serif : false
     extra_weights : true
@@ -698,6 +689,14 @@ fontdata:
     foundry : { name: Adobe, slug: adobe }
     tags: [ clean, clear, text, paragraph ]
 
+  - name : Mittwoch
+    slug : mittwoch
+    serif : true
+    styles : 8
+    library : Personal plan
+    foundry : { name: Insigne Design, slug: insigne-design }
+    tags: [ retro, display, modern ]
+
   - name : Montag
     slug : montag
     serif : false
@@ -829,6 +828,14 @@ fontdata:
     library : portfolio
     foundry : { name: Porchez Typofonderie, slug: porchez-typofonderie }
     tags: [ casual, clean, clear ]
+  
+  - name : Pauline
+    slug : pauline
+    serif : false
+    styles : 4
+    library : Personal plan
+    foundry : { name: Insigne Design, slug: insigne-design }
+    tags: [ handwriting, geometric, rounded, retro, poster ]
 
   - name : Pill Gothic 600mg
     slug : pill-gothic-600mg
@@ -1020,17 +1027,6 @@ fontdata:
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, elegant, oldstyle ]
   
-# other possible fonts
-# Chauncy http://typekit.com/fonts/chauncy-pro
-# Larabiefont http://typekit.com/fonts/larabiefont
-# Silicone http://typekit.com/fonts/silicone
-# Superclarendon http://typekit.com/fonts/superclarendon
-# Presicav http://typekit.com/fonts/presicav
-
-# removed
-# Gnuolane
-# Costa
-
   # - name : FONTNAME
   #   slug : FONTSLUG
   #   serif : false
