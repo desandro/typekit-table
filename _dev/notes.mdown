@@ -1,0 +1,14 @@
+## other possible fonts
+
+Chauncy http://typekit.com/fonts/chauncy-pro
+Larabiefont http://typekit.com/fonts/larabiefont
+Silicone http://typekit.com/fonts/silicone
+Superclarendon http://typekit.com/fonts/superclarendon
+Presicav http://typekit.com/fonts/presicav
+Adaptive Mono http://typekit.com/fonts/adaptive-mono
+
+## removed
+
+- Gnuolane
+- Costa
+- Colaborate
