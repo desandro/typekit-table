@@ -235,7 +235,7 @@ button {  width: auto; overflow: visible; }
 .bree-web .sample,
 .cora-web .sample,
 .edita-web .sample,
-.cronos-web .sample,
+.cronos-pro .sample,
 .news-gothic-std .sample,
 .hypatia-sans-pro .sample,
 .garamond-premier-pro .sample,
@@ -275,50 +275,100 @@ button {  width: auto; overflow: visible; }
 .madawaska .sample,
 .cantarell .sample,
 .fenwick .sample,
+.katarine-web .sample,
 .expressway .sample
 { background-image: url('http://i.imgur.com/LJy77.png'); }
 
+.cardigan .sample,
+.chennai .sample,
+.chennai-slab .sample,
+.jesaya .sample,
+.milibus .sample,
+.tussilago .sample,
+.divulge .sample,
+.ddt .sample,
+.neuropol-x .sample,
+.tandelle .sample,
+.sommet-slab .sample,
+.sovba .sample,
+.le-havre .sample,
+.terfens .sample,
+.sommet .sample,
+.pauline .sample,
+.montag .sample,
+.dienstag .sample,
+.mittwoch .sample,
+.coolvetica .sample,
+.default-gothic .sample,
+.vidange .sample,
+.deva-ideal .sample,
+.droid-serif .sample
+{ background-image: url('http://i.imgur.com/FTvVn.png'); }
+
+.cardigan .sample,
 .angie-std-sans .sample,
 .adriane .sample { background-position: 0   0px; }
+.chennai .sample,
 .apertura .sample,
 .adelle-web .sample { background-position: 0 -40px; }
+.chennai-slab .sample,
 .atrament-web .sample,
 .athelas-web .sample { background-position: 0 -80px; }
+.jesaya .sample,
 .pill-gothic-600mg .sample,
 .ronnia-web .sample { background-position: 0 -120px; }
+.milibus .sample,
 .kulturista-web .sample,
 .skolar-web .sample { background-position: 0 -160px; }
+.tussilago .sample,
 .dederon-sans-web .sample,
 .adobe-caslon-pro .sample { background-position: 0 -200px; }
+.divulge .sample,
 .comenia-sans-web .sample,
 .minion-pro .sample { background-position: 0 -240px; }
+.ddt .sample,
 .republic-web .sample,
 .chaparral-pro .sample { background-position: 0 -280px; }
+.neuropol-x .sample,
 .botanika-web .sample,
 .bree-web .sample { background-position: 0 -320px; }
+.tandelle .sample,
 .teimer-web .sample,
 .cora-web .sample { background-position: 0 -360px; }
+.sommet-slab .sample,
 .dederon-serif-web .sample,
 .edita-web .sample { background-position: 0 -400px; }
+.sovba .sample,
 .purista-web .sample,
-.cronos-web .sample { background-position: 0 -440px; }
+.cronos-pro .sample { background-position: 0 -440px; }
+.le-havre .sample,
 .nudista-web .sample,
 .news-gothic-std .sample { background-position: 0 -480px; }
+.terfens .sample,
+.katarine-web .sample,
 .hypatia-sans-pro .sample { background-position: 0 -520px; }
+.sommet .sample,
 .gloriola-web .sample,
 .garamond-premier-pro .sample { background-position: 0 -560px; }
+.pauline .sample,
 .brevia .sample,
 .adobe-text-pro .sample { background-position: 0 -600px; }
+.montag .sample,
 .museo-slab .sample,
 .adobe-garamond-pro .sample { background-position: 0 -640px; }
+.dienstag .sample,
 .museo .sample,
 .adrianna .sample { background-position: 0 -680px; }
+.mittwoch .sample,
 .museo-sans .sample,
 .mingler .sample { background-position: 0 -720px; }
+.coolvetica .sample,
 .calluna .sample,
 .le-monde-journal-std .sample { background-position: 0 -760px; }
+.default-gothic .sample,
 .calluna-sans .sample,
 .le-monde-sans-std .sample { background-position: 0 -800px; }
+.vidange .sample,
 .cantarell .sample,
 .le-monde-courrier-std .sample { background-position: 0 -840px; }
 .madawaska .sample,
