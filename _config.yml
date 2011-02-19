@@ -184,6 +184,15 @@ fontdata:
     library : portfolio
     foundry: { name : Insigne Design, slug : insigne-design }
 
+  - name : Chennai Slab
+    slug : chennai-slab
+    serif : true
+    extra_weights : true
+    styles : 12
+    library : Portfolio plan
+    foundry : { name: Insigne Design, slug: insigne-design }
+    tags: [ clean, geometric, slab, rounded, decorative, futuristic, retro, text ]
+    
   - name : Colaborate
     slug : colaborate
     serif : false
@@ -467,16 +476,6 @@ fontdata:
     library : portfolio
     foundry : { name: Suitcase Type Foundry, slug: suitcase-type-foundry }
     tags: [ clean, clear, text ]
-
-  - name : Gnuolane
-    slug : gnuolane
-    serif : false
-    extra_weights : true
-    windows_rating : 2
-    styles : 5
-    library : personal
-    foundry : { name: Typodermic, slug: typodermic }
-    tags: [ block ]
 
   - name : Harfang Pro
     slug : harfang-pro
@@ -772,6 +771,15 @@ fontdata:
     foundry : { name: Adobe, slug: adobe }
     tags: [ historic, clear, gothic, headline ]
 
+  - name: Neuropol X
+    slug : neuropol-x
+    serif : false
+    extra_weights: true
+    styles : 6
+    library : Personal plan
+    foundry : { name: Typodermic, slug: typodermic }
+    tags: [ geometric, techno, futuristic ]
+
   - name : Nobile
     slug : nobile
     serif : false
@@ -906,6 +914,16 @@ fontdata:
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ clean, techno, decorative ]
 
+  - name : Sommet Slab
+    slug : sommet-slab
+    serif : true
+    extra_weights : true
+    styles : 12
+    library : personal
+    foundry : { name: Insigne Design, slug: insigne-design }
+    tags: [ slab, contemporary, powerful ]
+
+
   - name : Sovba
     slug : sovba
     serif : false
@@ -1006,8 +1024,12 @@ fontdata:
 # Chauncy http://typekit.com/fonts/chauncy-pro
 # Larabiefont http://typekit.com/fonts/larabiefont
 # Silicone http://typekit.com/fonts/silicone
+# Superclarendon http://typekit.com/fonts/superclarendon
+# Presicav http://typekit.com/fonts/presicav
 
-
+# removed
+# Gnuolane
+# Costa
 
   # - name : FONTNAME
   #   slug : FONTSLUG
