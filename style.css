@@ -179,6 +179,7 @@ button {  width: auto; overflow: visible; }
   margin: 0;
   list-style: none;
   position: relative;
+  overflow: hidden;
 }
 
 

@@ -3,22 +3,6 @@ windows_rating_classes : [ 'windows-bad', 'windows-okay', 'windows-great' ]
 windows_ratings : [ 'Bad', 'Okay', 'Great' ]
 fontdata:
 
-  # jquery for retrieving data from pages
-  
-  # (function() {
-  #   var output = '';
-  #   output += 'styles : ' + $('.font-variations dt').length
-  #     + '!!library : ' + $('.upgrade-notice strong').text()
-  #     + '!!foundry : { name: ' + $('.font-byline a').text()
-  #     + ', slug: ' + $('.font-byline a').attr('href').replace( '/foundries/', '') + ' }'
-  #     + '!!tags: [ ';
-  #   $('.tag-list').eq(2).find('li').each(function(){
-  #     output += $(this).text() + ', '
-  #   });
-  #   output += ']';
-  #   return output;
-  # })();
-  
   - name : Adelle Web
     slug : adelle-web
     serif : true
@@ -27,6 +11,15 @@ fontdata:
     windows_rating : 2
     library : trial
     foundry : { name : TypeTogether, slug : typetogether  }
+
+  - name : Adobe Caslon Pro
+    slug : adobe-caslon-pro
+    serif : true
+    extra_weights : true
+    styles : 6
+    library : Portfolio plan
+    foundry : { name: Adobe, slug: adobe }
+    tags: [ historic, paragraph, elegant, oldstyle ]
 
   - name : Adobe Garamond Pro
     slug : adobe-garamond-pro
@@ -892,7 +885,7 @@ fontdata:
     foundry : { name: TypeTogether, slug: typetogether }
     tags: [ clean, historic, clear ]
 
-  - name : Skolar
+  - name : Skolar Web
     slug : skolar-web
     serif : true
     extra_weights : true
@@ -999,6 +992,15 @@ fontdata:
     library : portfolio
     foundry : { name: PSY/OPS, slug: psyops }
     tags: [ geometric, historic, futuristic, display, quirky ]
+  
+  - name : Warnock Pro
+    slug : warnock-pro
+    serif : true
+    extra_weights : true
+    styles : 6
+    library : Personal plan
+    foundry : { name: Adobe, slug: adobe }
+    tags: [ historic, elegant, oldstyle ]
 
 
   # - name : FONTNAME
