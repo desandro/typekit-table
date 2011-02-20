@@ -6,16 +6,16 @@ fontdata:
   - name : Adelle Web
     slug : adelle-web
     serif : true
-    extra_weights : true
     styles : 12
     windows_rating : 2
     library : trial
-    foundry : { name : TypeTogether, slug : typetogether  }
+    foundry : { name : TypeTogether, slug : typetogether }
+    tags: [ slab ]
+    attributes: [ 'has-heavy' ]
 
   - name : Adobe Caslon Pro
     slug : adobe-caslon-pro
     serif : true
-    extra_weights : true
     styles : 6
     library : portfolio
     foundry : { name: Adobe, slug: adobe }
@@ -24,16 +24,14 @@ fontdata:
   - name : Adobe Garamond Pro
     slug : adobe-garamond-pro
     serif : true
-    extra_weights : true
     windows_rating : 1
     styles: 6
-    libraries : trial
+    library : trial
     foundry : { name : Adobe, slug : adobe }
 
   - name : Adobe Text Pro
     slug : adobe-text-pro
     serif : true
-    extra_weights : true
     windows_rating : 2
     styles: 6
     library : portfolio
@@ -50,7 +48,6 @@ fontdata:
   - name : Adrianna
     slug : adrianna
     serif : false
-    extra_weights : true
     superfamily : true
     family : 
       - name : Adrianna Extended
@@ -61,6 +58,7 @@ fontdata:
     styles: 10
     library : portfolio
     foundry : { name : Chank Co, slug : chank-co }
+    attributes: [ 'has-extended' ]
 
   - name : Angie STD Sans
     slug : angie-std-sans
@@ -73,7 +71,6 @@ fontdata:
   - name : Apertura
     slug : apertura
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles: 8
     library : portfolio
@@ -82,7 +79,6 @@ fontdata:
   - name : Apolline STD
     slug : apolline-std
     serif : true
-    extra_weights : true
     windows_rating : 0
     library : trial
     styles : 6
@@ -99,7 +95,6 @@ fontdata:
   - name : Atrament Web
     slug : atrament-web
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : personal
@@ -115,7 +110,6 @@ fontdata:
   - name : Bree Web
     slug : bree-web
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 10 
     library : personal
@@ -124,7 +118,6 @@ fontdata:
   - name : Brevia
     slug : brevia
     serif : false
-    extra_weights : true
     windows_rating : 1
     styles : 12
     library : personal
@@ -133,7 +126,6 @@ fontdata:
   - name : Calluna
     slug : calluna
     serif : true
-    extra_weights : true
     windows_rating : 1
     styles : 8
     library : trial
@@ -142,9 +134,8 @@ fontdata:
   - name : Calluna Sans
     slug : calluna-sans
     serif : false
-    extra_weights : true
     styles : 10
-    library : Trial plan
+    library : trial
     foundry : { name: exljbris Font Foundry, slug: exljbris-font-foundry }
     tags: [ clean, clear, elegant ]
 
@@ -159,7 +150,6 @@ fontdata:
   - name : Cardigan
     slug : cardigan
     serif : false
-    extra_weights : true
     windows_rating : 1
     styles : 6
     library : personal
@@ -168,7 +158,6 @@ fontdata:
   - name : Chaparral Pro
     slug : chaparral-pro
     serif : true
-    extra_weights : true
     extra_opticals : true
     windows_rating : 1
     styles : 8
@@ -178,7 +167,6 @@ fontdata:
   - name : Chennai
     slug : chennai
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 12
     library : portfolio
@@ -187,9 +175,8 @@ fontdata:
   - name : Chennai Slab
     slug : chennai-slab
     serif : true
-    extra_weights : true
     styles : 12
-    library : Portfolio plan
+    library : portfolio
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ clean, geometric, slab, rounded, decorative, futuristic, retro, text ]
     
@@ -204,7 +191,6 @@ fontdata:
   - name : Coolvetica
     slug : coolvetica
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 14
     library : personal
@@ -213,7 +199,6 @@ fontdata:
   - name : Cora Web
     slug : cora-web
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -222,7 +207,6 @@ fontdata:
   - name : Cronos Pro
     slug : cronos-pro
     serif : false
-    extra_weights : true
     extra_opticals : true
     windows_rating : 2
     styles : 8
@@ -232,7 +216,6 @@ fontdata:
   - name : DDT
     slug : ddt
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 12 
     library : personal 
@@ -258,7 +241,6 @@ fontdata:
   - name : Default Gothic
     slug : default-gothic
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : portfolio
@@ -267,7 +249,6 @@ fontdata:
   - name : Deva Ideal
     slug : deva-ideal
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 10
     library : personal
@@ -277,7 +258,6 @@ fontdata:
   - name : Dienstag
     slug : dienstag
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6 
     library : portfolio
@@ -286,7 +266,6 @@ fontdata:
   - name : Divulge
     slug : divulge
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -296,7 +275,6 @@ fontdata:
   - name : Droid Serif
     slug : droid-serif
     serif : true
-    extra_weights : true
     extra_opticals : true
     windows_rating : 0
     styles : 4
@@ -352,7 +330,6 @@ fontdata:
   - name : FF Cocon Web Pro
     slug : ff-cocon-web-pro
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 4
     library : personal
@@ -371,7 +348,6 @@ fontdata:
   - name : FF Dax Web Pro
     slug : ff-dax-web-pro
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 4
     library : portfolio
@@ -381,7 +357,6 @@ fontdata:
   - name : FF Enzo Web
     slug : ff-enzo-web
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 10
     library : trial
@@ -412,7 +387,6 @@ fontdata:
   - name : FF Nuvo Web Pro
     slug : ff-nuvo-web-pro
     serif : false
-    extra_weights : true
     extra_opticals : true
     windows_rating : 2
     styles : 10
@@ -432,7 +406,6 @@ fontdata:
   - name : Galette
     slug : galette
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -442,7 +415,6 @@ fontdata:
   - name : Garamond Premier Pro
     slug : garamond-premier-pro
     serif : true
-    extra_weights : true
     windows_rating : 1
     styles : 8
     library : portfolio
@@ -452,7 +424,6 @@ fontdata:
   - name : Gesta
     slug : gesta
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : trial
@@ -472,7 +443,6 @@ fontdata:
   - name : Harfang Pro
     slug : harfang-pro
     serif : true
-    extra_weights : true
     windows_rating : 1
     styles : 12
     library : personal
@@ -482,7 +452,6 @@ fontdata:
   - name : Hypatia Sans Pro
     slug : hypatia-sans-pro
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 12
     library : portfolio
@@ -492,7 +461,6 @@ fontdata:
   - name : Jesaya
     slug : jesaya
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 7
     library : portfolio
@@ -502,7 +470,6 @@ fontdata:
   - name : Kandal
     slug : kandal
     serif : true
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : personal
@@ -521,7 +488,6 @@ fontdata:
   - name : Kulturista
     slug : kulturista-web
     serif : true
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 10
@@ -532,7 +498,6 @@ fontdata:
   - name : Lapture
     slug : lapture
     serif : true
-    extra_weights : true
     extra_opticals : true
     windows_rating : 1
     styles : 6
@@ -543,7 +508,6 @@ fontdata:
   - name : Le Havre
     slug : le-havre
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 1
     styles : 10
@@ -554,7 +518,6 @@ fontdata:
   - name : Le Monde Courrier STD
     slug : le-monde-courrier-std
     serif : true
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 6
@@ -565,7 +528,6 @@ fontdata:
   - name : Le Monde Journal STD
     slug : le-monde-journal-std
     serif : true
-    extra_weights : true
     superfamily : true
     windows_rating : 1
     styles : 6
@@ -576,7 +538,6 @@ fontdata:
   - name : Le Monde Sans STD
     slug : le-monde-sans-std
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 6
@@ -624,7 +585,6 @@ fontdata:
   - name : Madawaska
     slug : madawaska
     serif : true
-    extra_weights : true
     windows_rating : 2
     styles : 14
     library : personal
@@ -634,7 +594,6 @@ fontdata:
   - name : Mentone
     slug : mentone
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : portfolio
@@ -653,7 +612,6 @@ fontdata:
   - name : Milibus
     slug : milibus
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : personal
@@ -663,7 +621,6 @@ fontdata:
   - name : Minerva Modern
     slug : minerva-modern
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -673,7 +630,6 @@ fontdata:
   - name : Mingler
     slug : mingler
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : personal
@@ -694,14 +650,13 @@ fontdata:
     slug : mittwoch
     serif : true
     styles : 8
-    library : Personal plan
+    library : personal
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ retro, display, modern ]
 
   - name : Montag
     slug : montag
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : portfolio
@@ -711,7 +666,6 @@ fontdata:
   - name : Museo
     slug : museo
     serif: true
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 10
@@ -722,7 +676,6 @@ fontdata:
   - name : Museo Sans
     slug : museo-sans
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 10
@@ -733,7 +686,6 @@ fontdata:
   - name : Museo Slab
     slug : museo-slab
     serif : true
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 12
@@ -744,7 +696,6 @@ fontdata:
   - name : Myriad Pro
     slug : myriad-pro
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 10
@@ -755,7 +706,6 @@ fontdata:
   - name : New Cicle
     slug : new-cicle
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -776,7 +726,7 @@ fontdata:
     serif : false
     extra_weights: true
     styles : 6
-    library : Personal plan
+    library : personal
     foundry : { name: Typodermic, slug: typodermic }
     tags: [ geometric, techno, futuristic ]
 
@@ -792,7 +742,6 @@ fontdata:
   - name : Nudista Web
     slug : nudista-web
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 10
@@ -812,7 +761,6 @@ fontdata:
   - name : P22 FLLW Eaglefeather
     slug : p22-fllw-eaglefeather
     serif : false
-    extra_weights : true
     extra_opticals : true
     windows_rating : 1
     styles : 6
@@ -834,14 +782,13 @@ fontdata:
     slug : pauline
     serif : false
     styles : 4
-    library : Personal plan
+    library : personal
     foundry : { name: Insigne Design, slug: insigne-design }
     tags: [ handwriting, geometric, rounded, retro, poster ]
 
   - name : Pill Gothic 600mg
     slug : pill-gothic-600mg
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 8
@@ -852,7 +799,6 @@ fontdata:
   - name : Proxima Nova
     slug : proxima-nova
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 14
@@ -863,7 +809,6 @@ fontdata:
   - name : Purista Web
     slug : purista-web
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 10
     library : portfolio
@@ -873,7 +818,6 @@ fontdata:
   - name : Ratio
     slug : ratio
     serif : false
-    extra_weights : true
     windows_rating : 1
     styles : 12
     library : personal
@@ -893,7 +837,6 @@ fontdata:
   - name : Ronnia Web
     slug : ronnia-web
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 2
     styles : 14
@@ -904,16 +847,14 @@ fontdata:
   - name : Runda
     slug : runda
     serif : false
-    extra_weights : true
     styles : 10
-    library : Personal plan
+    library : personal
     foundry : { name: ps Type, slug: ps-type }
     tags: [ clear, contemporary, versatile ]
 
   - name : Skolar Web
     slug : skolar-web
     serif : true
-    extra_weights : true
     windows_rating : 2
     styles : 6
     library : personal
@@ -923,7 +864,6 @@ fontdata:
   - name : Sommet
     slug : sommet
     serif : false
-    extra_weights : true
     superfamily : true
     windows_rating : 0
     styles : 12
@@ -934,7 +874,6 @@ fontdata:
   - name : Sommet Slab
     slug : sommet-slab
     serif : true
-    extra_weights : true
     styles : 12
     library : personal
     foundry : { name: Insigne Design, slug: insigne-design }
@@ -944,7 +883,6 @@ fontdata:
   - name : Sovba
     slug : sovba
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 12
     library : trial
@@ -954,7 +892,6 @@ fontdata:
   - name : Sui Generis
     slug : sui-generis
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 14
     library : personal
@@ -982,7 +919,6 @@ fontdata:
   - name : Terfens
     slug : terfens
     serif : false
-    extra_weights : true
     windows_rating : 1
     styles : 6
     library : trial
@@ -992,7 +928,6 @@ fontdata:
   - name : Tussilago
     slug : tussilago
     serif : false
-    extra_weights : true
     windows_rating : 1
     styles : 14
     library : personal
@@ -1002,7 +937,6 @@ fontdata:
   - name : Urbana
     slug : urbana
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 10
     library : personal
@@ -1021,7 +955,6 @@ fontdata:
   - name : Vidange Pro
     slug : vidange-pro
     serif : false
-    extra_weights : true
     windows_rating : 2
     styles : 8
     library : portfolio
@@ -1031,7 +964,6 @@ fontdata:
   - name : Warnock Pro
     slug : warnock-pro
     serif : true
-    extra_weights : true
     styles : 6
     library : personal
     foundry : { name: Adobe, slug: adobe }
