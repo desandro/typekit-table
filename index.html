@@ -35,24 +35,44 @@ layout: nil
     
     <div id="filters">
       <h2>Filter</h2>
+
       <div class="serifs">
         <h3>Serifs</h3>
         <ul>
           <li>
-            <input type="radio" name="sort" id="filter-serifs-any" value="" checked />
-            <label for="filter-serif-any">Any</label>
+            <input type="radio" name="filter-serifs" id="filter-serifs-either" value="font" checked />
+            <label for="filter-serifs-either">Either</label>
           </li>
           <li>
-            <input type="radio" name="sort" id="filter-serifs-serif" value="serif" />
+            <input type="radio" name="filter-serifs" id="filter-serifs-serif" value="serif" />
             <label for="filter-serifs-serif">Serif</label>
           </li>
           <li>
-            <input type="radio" name="sort" id="filter-serifs-sans-serif" value="sans-serif" />
+            <input type="radio" name="filter-serifs" id="filter-serifs-sans-serif" value="sans-serif" />
             <label for="filter-serifs-sans-serif">Sans-serif</label>
           </li>
         </ul>
       </div>
-    </div>
+
+      <div class="library">
+        <h3>Library</h3>
+        <ul>
+          <li>
+            <input type="radio" name="filter-library" id="filter-library-trial" value="trial-library" />
+            <label for="filter-library-trial">Trial</label>
+          </li>
+          <li>
+            <input type="radio" name="filter-library" id="filter-library-personal" value="personal-library" />
+            <label for="filter-library-personal">Personal</label>
+          </li>
+          <li>
+            <input type="radio" name="filter-library" id="filter-library-portfolio" value="font" checked />
+            <label for="filter-library-portfolio">Portfolio</label>
+          </li>
+        </ul>
+      </div>
+
+    </div> <!-- #filters -->
 
   </div>
 
@@ -68,7 +88,7 @@ layout: nil
         {% assign serif_class = 'sans-serif' %}
       {% endif %}
 
-      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {% for tag in font.tags %} {{ tag }} {% endfor %} {% endcapture %}
+      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {% for tag in font.tags %} {{ tag }} {% endfor %} {% if font.library == 'trial' %} trial-library personal-library {% endif %}  {% if font.library == 'personal' %} personal-library {% endif %} {% endcapture %}
 
       <li class="font {{ item_class }}" data-windows-rating="{{ font.windows_rating }}" data-styles="{{ font.styles }}" data-foundry="{{ font.foundry.slug }}">
         <a href="http://typekit.com/fonts/{{ font.slug }}">
@@ -105,7 +125,11 @@ layout: nil
   <script>
     $(function(){
       var $list = $('#list'),
-          filters = [];
+          filters = [],
+          filterList = function(){
+            var filterValue = '.' + filters.join('.');
+            $list.isotope({ filter: filterValue });
+          };
       
       $list.isotope({
         getSortData : {
@@ -115,7 +139,17 @@ layout: nil
       });
       
       $('#sorts input').change(function(){
-        $list.isotope({ sortBy: $(this).val() })
+        $list.isotope({ sortBy: $(this).val() });
+      });
+      
+      $('#filters .serifs input').change(function(){
+        filters[0] = $(this).val();
+        filterList();
+      });
+      
+      $('#filters .library input').change(function(){
+        filters[1] = $(this).val();
+        filterList();
       });
       
     });

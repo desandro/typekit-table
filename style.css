@@ -116,7 +116,7 @@ button {  width: auto; overflow: visible; }
   z-index: 100;
   width: 100%;
   height: 140px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #header h1 {
@@ -147,9 +147,9 @@ button {  width: auto; overflow: visible; }
   top: 10px;
 }
 
-#filters .serifs h3,
-#filters .serifs ul,
-#filters .serifs li {
+#filters .serifs h3, #filters .library h3,
+#filters .serifs ul, #filters .library ul,
+#filters .serifs li, #filters .library li {
   display: inline-block;
   margin-right: 0.5em;
 }
