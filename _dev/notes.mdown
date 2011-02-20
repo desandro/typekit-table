@@ -1,11 +1,49 @@
+## UX
+
+**Sorts**
+
++ Name (original)
++ number of styles
++ Foundry
+
+**Filters**
+
++ Extra weights
++ Extra opticals
++ Serif
++ Library
++ foundries
++ tags
+  - extended
+  - condensed
+  - geometric
+  - slab serif
+  - 
++ Has companion
++ Superfamily
+  - has extended
+  - has condensed
+  - has small caps
+  - 
+
+
 ## other possible fonts
 
 Chauncy http://typekit.com/fonts/chauncy-pro
+
 Larabiefont http://typekit.com/fonts/larabiefont
+
 Silicone http://typekit.com/fonts/silicone
+
 Superclarendon http://typekit.com/fonts/superclarendon
+
 Presicav http://typekit.com/fonts/presicav
+
 Adaptive Mono http://typekit.com/fonts/adaptive-mono
+
+FF Duper Web Pro http://typekit.com/fonts/ff-duper-web-pro
+
+T26 Carbon http://typekit.com/fonts/t26-carbon
 
 ## removed
 

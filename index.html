@@ -12,7 +12,51 @@ layout: nil
 </head>
 <body>
 
-  <h1>{{ site.name }}</h1>
+  <div id="header">
+    <h1>{{ site.name }}</h1>
+    
+    <div id="sorts">
+      <h2>Sort by</h2>
+      <ul>
+        <li>
+          <input type="radio" name="sort" id="sort-name" value="original-order" checked />
+          <label for="sort-name">Name</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="sort-styles" value="styles" />
+          <label for="sort-styles">Number of styles</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="sort-foundry" value="foundry" />
+          <label for="sort-foundry">Foundry</label>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="filters">
+      <h2>Filter</h2>
+      <div class="serifs">
+        <h3>Serifs</h3>
+        <ul>
+          <li>
+            <input type="radio" name="sort" id="filter-serifs-any" value="" checked />
+            <label for="filter-serif-any">Any</label>
+          </li>
+          <li>
+            <input type="radio" name="sort" id="filter-serifs-serif" value="serif" />
+            <label for="filter-serifs-serif">Serif</label>
+          </li>
+          <li>
+            <input type="radio" name="sort" id="filter-serifs-sans-serif" value="sans-serif" />
+            <label for="filter-serifs-sans-serif">Sans-serif</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  
   
   <ul id="list" class="clearfix">
     {% for font in site.fontdata %}
@@ -24,31 +68,58 @@ layout: nil
         {% assign serif_class = 'sans-serif' %}
       {% endif %}
 
-      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {{ site.windows_rating_classes[font.windows_rating] }} {% for tag in font.tags %} {{ tag }} {% endfor %} {% endcapture %}
+      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {% for tag in font.tags %} {{ tag }} {% endfor %} {% endcapture %}
 
       <li class="font {{ item_class }}" data-windows-rating="{{ font.windows_rating }}" data-styles="{{ font.styles }}" data-foundry="{{ font.foundry.slug }}">
         <a href="http://typekit.com/fonts/{{ font.slug }}">
           <figure class="sample"></figure>
-          <h2 class="">{{ font.name }}</h2>
         </a>
-        <ul class="font-data">
-          <li class="styles"><b>{{ font.styles }}</b> styles</li>
-          <li class="serifs">{{ serif_output }}</li>
-          <li class="library"><b>{{ font.library | capitalize }}</b></li>
-          <li class="foundry">by <a href="http://typekit.com/foundries/{{ font.foundry.slug }}">{{ font.foundry.name }}</a></li>
+        
+        <p class="identity">
+          <strong class="name"><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></strong>
+          by <span class="foundry"><a href="http://typekit.com/foundries/{{ font.foundry.slug }}">{{ font.foundry.name }}</a></span>
+        </p>
+        <p class="styles">
+          <span class="number-of">{{ font.styles }} styles</span>
+          <span class="serifs">{{ serif_output }}</span>
+          <span class="library">{{ font.library | capitalize }}</span>
+        </p>
+        <!-- <ul class="font-data">
+            
           {% if font.extra_weights %}<li class="extra-weights">Extra weights</li>{% endif %}
           {% if font.extra_opticals %}<li class="extra-opticals">Extra opticals</li>{% endif %}
           {% if font.superfamily %}<li class="superfamily">Superfamily</li>{% endif %}
-          <li class="on-windows">On Windows: <b>{{ site.windows_ratings[font.windows_rating] }}</b></li>
           <li class="tags">
             <ul>
               {% for tag in font.tags %}<li>{{ tag }}</li>{% endfor %}
             </ul>
           </li>
-        </ul>
+        </ul> -->
       </li>
     {% endfor %}
   </ul>
+  
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"></script>
+  <script src="http://isotope.metafizzy.co/jquery.isotope.min.js"></script>
+  <script>
+    $(function(){
+      var $list = $('#list'),
+          filters = [];
+      
+      $list.isotope({
+        getSortData : {
+          styles : function( $item ) { return 20 - $item.data('styles'); },
+          foundry : function( $item ) { return $item.data('foundry'); }
+        }
+      });
+      
+      $('#sorts input').change(function(){
+        $list.isotope({ sortBy: $(this).val() })
+      });
+      
+    });
+  </script>
 
 </body>
 </html>

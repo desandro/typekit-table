@@ -47,9 +47,8 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 body, select, input, textarea {
-  color: #444;
-  /* Set your base font here, to apply evenly */
-  /* font-family: Georgia, serif;  */
+  color: #666;
+  font-family: "Century Schoolbook", Century, Georgia, serif;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
@@ -106,14 +105,65 @@ button {  width: auto; overflow: visible; }
  * Primary styles
  */
 
+/* Header */
+
+#header {
+  background: #EEE;
+  background: hsla( 0, 0%, 95%, 0.9 );
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 140px;
+  font-size: 14px;
+}
+
+#header h1 {
+  position: absolute;
+  width: 120px;
+  font-size: 24px;
+  left: 10px;
+  top: 10px;
+  line-height: 1.0em;
+}
+
+#header ul {
+  list-style: none;
+  margin: 0;
+}
+
+#sorts {
+  position: absolute;
+  left: 140px;
+  top: 10px;
+}
+
+/**** Filters *****/
+
+#filters {
+  position: absolute;
+  left: 300px;
+  top: 10px;
+}
+
+#filters .serifs h3,
+#filters .serifs ul,
+#filters .serifs li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+/**** List *****/
 
 #list {
   border-left: 1px dotted #CCC;
+  margin-top: 160px;
 }
 
 #list .font {
   width: 229px;
-  height: 159px;
+  height: 109px;
   padding: 10px;
   float: left;
   border-right: 1px dotted #CCC;
@@ -151,9 +201,47 @@ button {  width: auto; overflow: visible; }
 .font .tags li:last-child:after { content: '';}
 
 .font .styles, .font .serifs, .font .library {
-  display: inline-block;
-  margin-right: 0.5em;
 }
+
+.font .styles {
+  font-style: italic;
+}
+
+.font .styles span {
+  display: inline-block;
+}
+
+.font .styles span:after {
+  content: ' · ';
+  
+}
+
+
+.font .styles span:last-child:after { content: '';}
+
+/*.font .identity {
+  width: 125px;
+}
+
+.font .styles {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 80px;
+}
+
+.font .styles span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.font .styles .number-of {
+  font-size: 20px;
+  position: absolute;
+  right: 105%;
+}*/
 
 
 
@@ -395,7 +483,57 @@ button {  width: auto; overflow: visible; }
 .nobile .sample,
 .parisine-plus-std .sample { background-position: 0 -960px; }
 
+/**** Isotope Filtering ****/
 
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+/*     -o-transition-duration: 0.8s;*/
+          transition-duration: 0.8s;
+
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+/*     -o-transition-property: height, width;*/
+          transition-property: height, width;
+}
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+/*     -o-transition-property:      -o-transform, opacity;*/
+          transition-property:         transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+/*     -o-transition-duration: 0s;*/
+          transition-duration: 0s;
+}
 
 /**
  * Non-semantic helper classes: please define your styles before this section.
