@@ -272,6 +272,7 @@ fontdata:
     styles : 10
     library : personal
     foundry: { name : DizajnDesign, slug : dizajndesign }
+    tags : [ humanist, clean, clear ]
 
   - name : Dienstag
     slug : dienstag
@@ -899,6 +900,15 @@ fontdata:
     library : personal
     foundry : { name: TypeTogether, slug: typetogether }
     tags: [ clean, historic, clear ]
+  
+  - name : Runda
+    slug : runda
+    serif : false
+    extra_weights : true
+    styles : 10
+    library : Personal plan
+    foundry : { name: ps Type, slug: ps-type }
+    tags: [ clear, contemporary, versatile ]
 
   - name : Skolar Web
     slug : skolar-web
