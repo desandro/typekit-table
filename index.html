@@ -88,7 +88,7 @@ layout: nil
         {% assign serif_class = 'sans-serif' %}
       {% endif %}
 
-      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.extra_weights %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {% for tag in font.tags %} {{ tag }} {% endfor %} {% if font.library == 'trial' %} trial-library personal-library {% endif %}  {% if font.library == 'personal' %} personal-library {% endif %} {% endcapture %}
+      {% capture item_class %} {{ font.slug }} {{ serif_class }} {% if font.styles > 4 %} extra-weights {% endif %} {% if font.extra_opticals %} extra-opticals {% endif %} {% if font.superfamily %} superfamily {% endif %} {% for tag in font.tags %} {{ tag }} {% endfor %} {% if font.library == 'trial' %} trial-library personal-library {% endif %}  {% if font.library == 'personal' %} personal-library {% endif %} {% endcapture %}
 
       <li class="font {{ item_class }}" data-windows-rating="{{ font.windows_rating }}" data-styles="{{ font.styles }}" data-foundry="{{ font.foundry.slug }}">
         <a href="http://typekit.com/fonts/{{ font.slug }}">
