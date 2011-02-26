@@ -1,0 +1,7 @@
+The site is powered by [Jekyll](http://github.com/mojombo/jekyll/wiki). With Jekyll installed, you can clone this repo and run Jekyll from Terminal:
+
+    git clone https://github.com/desandro/typekit-table.git
+    cd typekit-table/
+    jekyll --server --auto
+
+Then view the live site at [http://localhost:4000](http://localhost:4000).
