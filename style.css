@@ -48,7 +48,7 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 body, select, input, textarea {
   color: #666;
-  font-family: "Century Schoolbook", Century, Georgia, serif;
+  font-family: "nudista-web-1","nudista-web-2";
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
@@ -59,11 +59,10 @@ html { overflow-y: scroll; }
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a, a:active, a:visited { color: #666; text-decoration: none; }
+a:hover { color: #999; text-decoration: underline; }
 
 
-ul, ol { margin-left: 2em; }
 ol { list-style-type: decimal; }
 
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
@@ -87,7 +86,7 @@ textarea { overflow: auto; }
 .ie6 legend, .ie7 legend { margin-left: -7px; } 
 
 input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
+input[type="checkbox"] { vertical-align: text-bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
 .ie6 input { vertical-align: text-bottom; }
 
@@ -95,8 +94,8 @@ label, input[type="button"], input[type="submit"], input[type="image"], button {
 
 button, input, select, textarea { margin: 0; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background:#333; color:#fff; text-shadow: none; }
 
 button {  width: auto; overflow: visible; }
 
@@ -108,24 +107,36 @@ button {  width: auto; overflow: visible; }
 /* Header */
 
 #header {
-  background: #EEE;
-  background: hsla( 0, 0%, 95%, 0.9 );
+  background: #222;
+  background: hsla( 0, 0%, 5%, 0.85 );
+  color: #fff;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
   width: 100%;
-  height: 140px;
-  font-size: 13px;
+  padding: 18px 0 18px 24px;
+  height: 104px;
+  font-size: 14px;
+}
+
+#header h1,
+.option {
+  border: 3px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  padding: 10px 0;
+  height: 78px;
 }
 
 #header h1 {
-  position: absolute;
-  width: 120px;
+  float: left;
+  width: 184px;
+  padding-right: 40px;
   font-size: 24px;
-  left: 10px;
-  top: 10px;
-  line-height: 1.0em;
+  line-height: 1.1;
+  font-family: "kulturista-web-1","kulturista-web-2";
+  -webkit-font-smoothing: antialiased;
 }
 
 #header ul {
@@ -133,47 +144,41 @@ button {  width: auto; overflow: visible; }
   margin: 0;
 }
 
-#sorts {
-  position: absolute;
-  left: 140px;
-  top: 10px;
+.option {
+  width: 100px;
+  margin-left: 24px;
+  float: left;
 }
-
-/**** Filters *****/
-
-#filters {
-  position: absolute;
-  left: 300px;
-  top: 10px;
+.option h2 {
+  text-transform: uppercase;
+  font-size: 11px;
 }
-
-#filters .serifs h3, #filters .library h3,
-#filters .serifs ul, #filters .library ul,
-#filters .serifs li, #filters .library li {
-  display: inline-block;
-  margin-right: 0.5em;
+.option li {
+  margin-top: .35em;
+  color: #999;
+}
+.option input:checked~label {
+  color: #fff;
 }
 
 /**** List *****/
 
 #list {
-  border-left: 1px dotted #CCC;
   margin-top: 160px;
 }
 
 #list .font {
-  width: 229px;
-  height: 109px;
-  padding: 10px;
+  border-top: 3px solid #222;
+  width: 224px;
+  height: 120px;
+  padding: 8px 0;
   float: left;
-  border-right: 1px dotted #CCC;
-  border-top: 1px dotted #CCC;
-  margin: 0;
+  margin: 0 0 24px 24px;
   list-style: none;
   position: relative;
   overflow: hidden;
+  background: #fff;
 }
-
 
 .font ul {
   margin: 0;  
@@ -181,8 +186,11 @@ button {  width: auto; overflow: visible; }
 
 .font li {
   list-style: none;
-
   padding: 0;
+}
+
+.font .identity {
+  font-style: italic;
 }
 
 .font .tags {
@@ -203,19 +211,24 @@ button {  width: auto; overflow: visible; }
 .font .styles, .font .serifs, .font .library {
 }
 
-.font .styles {
-  font-style: italic;
+.font p.styles {
+  width: 100px;
+  float: left;
+  border-top: 1px solid #ddd;
+  padding-top: 4px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+}
+.font p.styles+p.styles {
+  margin-left: 24px;
 }
 
 .font .styles span {
-  display: inline-block;
+  display: block;
+  margin-top: 8px;
 }
-
-.font .styles span:after {
-  content: ' · ';
-  
-}
-
 
 .font .styles span:last-child:after { content: '';}
 
@@ -482,6 +495,11 @@ button {  width: auto; overflow: visible; }
 .expressway .sample,
 .nobile .sample,
 .parisine-plus-std .sample { background-position: 0 -960px; }
+
+/* Weight Demo */
+
+.adelle-web .sample
+{ background-image: url('adelle-example.png'); background-position: 0 0; }
 
 /**** Isotope Filtering ****/
 

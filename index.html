@@ -6,16 +6,16 @@ layout: nil
 <head>
   <meta charset="utf-8" />
   <title>{{ site.name }}</title>
-
   <link rel="stylesheet" href="style.css" type="text/css" />
-
+  <script type="text/javascript" src="http://use.typekit.com/lwy3lit.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
 
   <div id="header">
     <h1>{{ site.name }}</h1>
     
-    <div id="sorts">
+    <div id="sorts" class="option">
       <h2>Sort by</h2>
       <ul>
         <li>
@@ -24,7 +24,7 @@ layout: nil
         </li>
         <li>
           <input type="radio" name="sort" id="sort-styles" value="styles" />
-          <label for="sort-styles">Number of styles</label>
+          <label for="sort-styles"># of styles</label>
         </li>
         <li>
           <input type="radio" name="sort" id="sort-foundry" value="foundry" />
@@ -32,51 +32,64 @@ layout: nil
         </li>
       </ul>
     </div>
+
+    <div class="serifs option">
+      <h2>Serifs</h2>
+      <ul>
+        <li>
+          <input type="radio" name="filter-serifs" id="filter-serifs-either" value="font" checked />
+          <label for="filter-serifs-either">Either</label>
+        </li>
+        <li>
+          <input type="radio" name="filter-serifs" id="filter-serifs-serif" value="serif" />
+          <label for="filter-serifs-serif">Serif</label>
+        </li>
+        <li>
+          <input type="radio" name="filter-serifs" id="filter-serifs-sans-serif" value="sans-serif" />
+          <label for="filter-serifs-sans-serif">Sans-serif</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="library option">
+      <h2>Library</h2>
+      <ul>
+        <li>
+          <input type="radio" name="filter-library" id="filter-library-trial" value="trial-library" />
+          <label for="filter-library-trial">Trial</label>
+        </li>
+        <li>
+          <input type="radio" name="filter-library" id="filter-library-personal" value="personal-library" />
+          <label for="filter-library-personal">Personal</label>
+        </li>
+        <li>
+          <input type="radio" name="filter-library" id="filter-library-portfolio" value="font" checked />
+          <label for="filter-library-portfolio">Portfolio</label>
+        </li>
+      </ul>
+    </div>
     
-    <div id="filters">
-      <h2>Filter</h2>
-
-      <div class="serifs">
-        <h3>Serifs</h3>
-        <ul>
-          <li>
-            <input type="radio" name="filter-serifs" id="filter-serifs-either" value="font" checked />
-            <label for="filter-serifs-either">Either</label>
-          </li>
-          <li>
-            <input type="radio" name="filter-serifs" id="filter-serifs-serif" value="serif" />
-            <label for="filter-serifs-serif">Serif</label>
-          </li>
-          <li>
-            <input type="radio" name="filter-serifs" id="filter-serifs-sans-serif" value="sans-serif" />
-            <label for="filter-serifs-sans-serif">Sans-serif</label>
-          </li>
-        </ul>
-      </div>
-
-      <div class="library">
-        <h3>Library</h3>
-        <ul>
-          <li>
-            <input type="radio" name="filter-library" id="filter-library-trial" value="trial-library" />
-            <label for="filter-library-trial">Trial</label>
-          </li>
-          <li>
-            <input type="radio" name="filter-library" id="filter-library-personal" value="personal-library" />
-            <label for="filter-library-personal">Personal</label>
-          </li>
-          <li>
-            <input type="radio" name="filter-library" id="filter-library-portfolio" value="font" checked />
-            <label for="filter-library-portfolio">Portfolio</label>
-          </li>
-        </ul>
-      </div>
+    <div class="features option">
+      <h2>Features</h2>
+      <ul>
+        <li>
+          <input type="checkbox" />
+          <label>Win OK</label>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Small caps</label>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Superfamily</label>
+        </li>
+      </ul>
+    </div>
 
     </div> <!-- #filters -->
 
   </div>
-
-  
   
   <ul id="list" class="clearfix">
     {% for font in site.fontdata %}
@@ -96,13 +109,16 @@ layout: nil
         </a>
         
         <p class="identity">
-          <strong class="name"><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></strong>
+          <!--<strong class="name"><a href="http://typekit.com/fonts/{{ font.slug }}">{{ font.name }}</a></strong>-->
           by <span class="foundry"><a href="http://typekit.com/foundries/{{ font.foundry.slug }}">{{ font.foundry.name }}</a></span>
         </p>
         <p class="styles">
           <span class="number-of">{{ font.styles }} styles</span>
           <span class="serifs">{{ serif_output }}</span>
+        </p>
+        <p class="styles">
           <span class="library">{{ font.library | capitalize }}</span>
+          <span class="win-ok">Win OK</span>
         </p>
         <!-- <ul class="font-data">
             
@@ -142,14 +158,25 @@ layout: nil
         $list.isotope({ sortBy: $(this).val() });
       });
       
-      $('#filters .serifs input').change(function(){
+      $('.serifs input').change(function(){
         filters[0] = $(this).val();
         filterList();
       });
       
-      $('#filters .library input').change(function(){
+      $('.library input').change(function(){
         filters[1] = $(this).val();
         filterList();
+      });
+      
+      $('.adelle-web .number-of').click(function(){
+        $('.adelle-web .sample').animate({
+          height: '470px'
+        });
+        $('.adelle-web').animate({
+          height: '609px'
+        },function(){
+          $('#list').isotope('reLayout');
+        });
       });
       
     });
