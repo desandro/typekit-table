@@ -1,0 +1,65 @@
+## Tags
+
+
+_Weights_
+  ultra light
+  light
+  heavy
+  black
+
+_Characteristics_
+  geometric
+  modern
+  slab
+  humanist
+  cute
+  serious
+  fun
+  professional
+  transitional
+  classical
+  condensed
+  extended
+
+_Relative_ (other similar fonts)
+  sans / serif companion (Calluna & Calluna Sans, Nudista and Kulturista)
+  small caps
+  extended (Adrianna Extended)
+  condensed (Proxima Nova)
+
+_On Windows_
+  Okay
+  Great
+
+_Foundries_
+  Adobe
+  TypeTogether
+  Typefolio
+  Chank Co
+  Porchez Typofonderie
+  Betatype
+  Suitcase Type Foundry
+  TypeTogether
+  HVD Fonts
+  exljbris Font Foundry
+  Larabie Fonts
+  Insigne Design
+  Typodermic
+  DizajnDesign
+  PSY/OPS
+  Google Android
+  Cheapskate Fonts
+  FontFont
+  Just Another Foundry
+  Paragraph
+  Rui Abreu
+  Mark Simonson Studio
+  Bigelow & Holmes
+  Red Hat
+  T-26
+  La Tipomatika
+  Vernon Adams
+  César Puertas
+  P22
+  ps Type
+  
