@@ -1,3 +1,15 @@
+# The Great Typekit Table
+
+[**desandro.github.com/typekit-table**](http://desandro.github.com/typekit-table)
+
+Sort and filter high-quality fonts from [Typekit](http://typekit.com).
+
+The aim of this page was to build upon SleepoverSF's [The Great Typekit Table](http://www.sleepoversf.com/the-great-typekit-table/) using [Isotope](http://isotope.metafizzy.co) for filtering and sorting. I got to collaborate with [David Cole](http://davidcole.me/) who designed the interface.
+
+Alas, we never completed the project. Typekit iterated on their own interface to implement all these features anyway.
+
+## Local development
+
 The site is powered by [Jekyll](http://github.com/mojombo/jekyll/wiki). With Jekyll installed, you can clone this repo and run Jekyll from Terminal:
 
     git clone https://github.com/desandro/typekit-table.git
